@@ -1,0 +1,23 @@
+.onForm input {
+    background-color: rgb(250, 250, 250);
+    border: 1px solid #d2d1d1;
+    border-radius: 5px;
+    height: 35px;
+    padding: 5px;
+    margin-top: 10px;
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2)
+}
+
+.onForm button {
+    width: 200px;
+    margin: 15px auto;
+}
+
+.respons{
+    position: absolute;
+    top: -50px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}

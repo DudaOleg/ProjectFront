@@ -1,0 +1,24 @@
+.buttonsInAllUsers{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.headerAllUsers{
+    max-height: 50vh;
+    max-width: 80vw;
+    margin: 20px auto 0 auto;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.titlesForTable{
+    color: #c4c3c3;
+    display: flex;
+}
+
+.titlesForTable div {
+    width: 300px;
+    padding: 15px;
+    text-align: left;
+}
