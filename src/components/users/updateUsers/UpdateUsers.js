@@ -54,8 +54,8 @@ export default function UpdateUsers() {
     }
 
     return (
-        <div className={'wrapperForms'}>
-            <form className={'onForm'} onSubmit={onForm} action={'/'} method='post'>
+        <div className={'wrapperForm'}>
+            <form className={'form'} onSubmit={onForm} action={'/'} method='post'>
                 <input placeholder={user.userName}
                        type={'text'}
                        value={userName}
@@ -85,4 +85,4 @@ export default function UpdateUsers() {
             </form>
         </div>
     )
-}      
+}

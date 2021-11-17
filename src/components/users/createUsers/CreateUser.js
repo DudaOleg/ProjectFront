@@ -32,7 +32,6 @@ export default function CreateUser() {
     const onForm = async (event) => {
         event.preventDefault()
 
-        if (!userName && !firstName && !lastName && !email && !password  ) return;
 
         try {
 
@@ -47,11 +46,11 @@ export default function CreateUser() {
     }
 
     return (
-        <div className={'wrapperForms'}>
+        <div className={'wrapperForm'}>
             {
                 resp && <div className={'red respons'}>{resp}</div>
             }
-            <form className={'onForm'} onSubmit={onForm} action={'/'} method='post'>
+            <form className={'form'} onSubmit={onForm} action={'/'} method='post'>
                 <input placeholder={'user name'}
                        type={'text'}
                        value={userName}
@@ -77,9 +76,8 @@ export default function CreateUser() {
                        value={password}
                        onChange={({target: {value}}) => dispatch({type: 'PASSWORD', value})}
                 />
-                <button className={'button green'} type="submit"
-                        disabled={!userName && !password && !email && firstName && lastName }>Create</button>
+                <button className={'button green'} type="submit">Create</button>
             </form>
         </div>
     )
-}      
+}

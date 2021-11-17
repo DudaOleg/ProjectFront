@@ -37,8 +37,8 @@ export default function Auth() {
 
 
     return (
-        <div className={'wrapperForms'}>
-            <form className={'onForm'} onSubmit={onForm} action={'/authorization'} method='post'>
+        <div className={'wrapperForm'}>
+            <form className={'form'} onSubmit={onForm} action={'/authorization'} method='post'>
 
                 <input placeholder={'Електронна адреса'} type={'email'} value={email}
                        onChange={({target: {value}}) => dispatcher({type: 'EMAIL', value})}/>
