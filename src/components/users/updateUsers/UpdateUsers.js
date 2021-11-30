@@ -8,12 +8,12 @@ function reducer(state, action) {
             return {...state, userName: action.value};
         case 'FIRST':
             return {...state, firstName: action.value};
-        case 'SURNAME':
+        case 'LAST':
             return {...state, lastName: action.value};
         case 'EMAIL':
-            return {...state, userEmail: action.value};
+            return {...state, email: action.value};
         case 'PASSWORD':
-            return {...state, userPassword: action.value};
+            return {...state, password: action.value};
         default:
             return state;
     }
